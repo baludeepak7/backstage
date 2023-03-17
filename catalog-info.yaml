@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: pet-store
-  description:  |
-    Service Description
+  description: Service Description
 spec:
   type: openapi
   owner: thbs
   lifecycle: production
   system: production
   definition:
-    $text: https://github.com/baludeepak7/backstage/blob/main/openapi.yaml
+    type: url
+    url: https://github.com/baludeepak7/backstage/blob/main/openapi.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: TechDocs
@@ -23,4 +23,4 @@ spec:
   content:
     - origin:
         type: url
-        url: https://github.com/swagger-api/swagger-petstore/blob/master/README.md
+        url: https://raw.githubusercontent.com/swagger-api/swagger-petstore/master/README.md
